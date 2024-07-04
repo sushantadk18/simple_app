@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -27,7 +28,9 @@ public class Signup_page extends AppCompatActivity {
         txtloginpage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent txtloginpageintent= new Intent(Signup_page.this,Login_page.class);
+                startActivity(txtloginpageintent);
+                
             }
         });
     }
